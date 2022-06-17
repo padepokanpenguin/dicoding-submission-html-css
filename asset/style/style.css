@@ -57,7 +57,11 @@ header.sticky {
   font-size: 1.2rem;
 }
 
-.navbar ul li:hover {
+.navbar ul li a {
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
   cursor: pointer;
   color: #86b1ce;
 }
@@ -341,6 +345,63 @@ header.sticky {
 @media (max-width: 1200px) {
   .content .home__layanan-kami {
     margin-top: -8%;
-    background-color: #ccc;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .header div h3 {
+    font-size: 20px;
+  }
+
+  .navbar ul li {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+
+  .content .home__welcome-page {
+    margin-top: 20rem;
+  }
+
+  .content .home__welcome-page-image {
+    display: none;
+  }
+
+  .content .home_welcome-page-text {
+    text-align: center;
+  }
+
+  .content .home_welcome-page-text br {
+    display: none;
+  }
+
+  .home__layanan-kami .home__layanan-kami-img img {
+    width: 250px;
+    height: 350px;
+  }
+
+  .home__portfolio .card {
+    height:550px;
+    width: 700px;
+    box-shadow 43px;
+  }
+
+  .home__portfolio .home__portfolio-text {
+    display: none;
+  }
+
+  .footer .footer__social-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .footer__addres {
+    font-size: 20px;
+    margin-top: 25%;
+  }
+
+  .footer .footer__social-media a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
 }
